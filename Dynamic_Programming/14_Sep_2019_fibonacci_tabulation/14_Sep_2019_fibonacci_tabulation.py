@@ -14,9 +14,9 @@ def fib(n):
     #return the nth fibonacci number
     return f[n]
 
-    def main():
-        n = 9
-        print("Fibonacci number is {}".format(fib(n)))
-    
-    if __name__ == "__main__":
-        main()
+def main():
+    n = 9
+    print("Fibonacci number is {}".format(fib(n)))
+
+if __name__ == "__main__":
+    main()
