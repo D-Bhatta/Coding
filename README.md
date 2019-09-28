@@ -8,6 +8,12 @@ Commits:
     Commits should be short and of the form:
     "Created programs for <program_name> <link_to_webpage>"
 
+
 Comment extenssively
 
-Remote:
+Remote: https://github.com/D-Bhatta/Coding.git
+
+Previous commit style:
+    First commit should init the program with file name: "Create file for <name_of_the_program> as <date>_<name_of_the_program>.<extension>"
+    When program is written , test it and then commit : "Test <name_of_the_program> and finalize it"
+This was modified to optimize workflow    
