@@ -13,11 +13,13 @@ def editDistance(x,y,m,n):
             elif(n == 0): dp[i][j] = i
 
             #if last chars are same, move on 
-            elif(x[m-1] == y[n-1]):
+            elif(x[i-1] == y[j-1]):
                 dp[i][j] = dp[i-1][j-1]
             #store the minimum of all 3 operations
             else:
-                dp[i][j] = 1+ min(dp[i][j-1],dp[i-1][j],dp[i-1][j-1])
+                dp[i][j] = 1+ min(dp[i][j-1],
+                                    dp[i-1][j],
+                                    dp[i-1][j-1])
     return dp[m][n]
 
 #driver program
