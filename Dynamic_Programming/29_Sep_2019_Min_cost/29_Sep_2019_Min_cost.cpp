@@ -21,7 +21,7 @@ int minCost(int cost[r][c], int m ,int n){
 }
 
 //an utility function that returns min of 3 ints
-int min (int x. int y, int z){
+int min (int x, int y, int z){
     if(x < y){
         return (x < z)? x : z;
     }
