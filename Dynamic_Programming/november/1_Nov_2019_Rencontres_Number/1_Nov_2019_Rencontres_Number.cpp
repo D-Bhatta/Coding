@@ -28,7 +28,7 @@ int recontresNumber(int c[][MAX], int n, int m){
 
     for(int i = 0; i <= n; i++){
         for(int j = 0; j <= m; j++){
-            if(j <= 1){
+            if(j <= i){
                 if(j == 0 && i > 1){
                     dp[i][j] = (i-1)*(dp[i-1][0] + dp[i-2][0]);
                 }
@@ -51,13 +51,13 @@ int main()
     int c[MAX][MAX];
     binomialCoeff(c,n,m);
 
-    cout << "Rencontres number for n = " << n << " and m = " << m << " is : " << recontresNumber(c,n,m);
+    cout << "Rencontres number for n = " << n << " and m = " << m << " is : " << recontresNumber(c,n,m) <<endl;
     n = 3; m = 0;
     binomialCoeff(c,n,m);
-    cout << "Rencontres number for n = " << n << " and m = " << m << " is : " << recontresNumber(c,n,m);
+    cout << "Rencontres number for n = " << n << " and m = " << m << " is : " << recontresNumber(c,n,m) <<endl;
     n = 3; m = 1;
     binomialCoeff(c,n,m);
-    cout << "Rencontres number for n = " << n << " and m = " << m << " is : " << recontresNumber(c,n,m);
+    cout << "Rencontres number for n = " << n << " and m = " << m << " is : " << recontresNumber(c,n,m) <<endl;
 
     return 0;
 }
