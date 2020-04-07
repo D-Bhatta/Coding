@@ -60,7 +60,7 @@ def prefetch(hashmap,x):
     if x+1 == 1001:
         return
     prefetch(hashmap, x+1)
-    
+
 def prefetch_millions(hashmap,x):
     """ recursively add to hashmap from 10 million """
     if x == 0:
@@ -73,17 +73,17 @@ def prefetch_millions(hashmap,x):
     if i in hashmap:
         i = hashmap[i]
     else:
-        prefetch(hashmap,i)
+        prefetch_millions(hashmap,i)
         i = hashmap[i]
     if j in hashmap:
         j = hashmap[j]
     else:
-        prefetch(hashmap,j)
+        prefetch_millions(hashmap,j)
         j = hashmap[j]
     if k in hashmap:
         k = hashmap[k]
     else:
-        prefetch(hashmap,k)
+        prefetch_millions(hashmap,k)
         k = hashmap[k]
     # add results
     result = i + j + k
@@ -150,8 +150,9 @@ def main():
     # loop for input
     while(True):
         # take input
-        x = input()
-        if x == '':
+        try:
+            x = input()
+        except EOFError:
             break
         x = int(x)
         
