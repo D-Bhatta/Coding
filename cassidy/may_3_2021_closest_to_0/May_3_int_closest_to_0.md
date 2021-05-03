@@ -1,4 +1,4 @@
-# Integer closes to 0
+# Integer closest to 0
 
 ## Problem definition
 
