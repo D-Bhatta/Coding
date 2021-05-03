@@ -2,7 +2,7 @@
 
 ## Problem definition
 
-From [@cassidoo](https://twitter.com/cassidoo)
+From [@cassidoo](https://twitter.com/cassidoo)'s [newsletter](https://buttondown.email/cassidoo/archive/in-a-time-of-destruction-create-something-maxine).
 
 ```text
 Given a positive or negative real number, round it to the next whole integer closer to zero. This means if it’s positive, round down, and if it’s negative, round up. Try to do this in as few characters possible!
