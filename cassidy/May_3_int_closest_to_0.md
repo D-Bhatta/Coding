@@ -72,4 +72,4 @@ def round(num: float):
 ```
 
 - 106 characters (35% reduction)
-- We use the [tuple ternary operator](https://book.pythontips.com/en/latest/ternary_operators.html) to reduce the number of characters required.
+- We use the [tuple ternary operator](https://book.pythontips.com/en/latest/ternary_operators.html) to reduce the number of characters required. `(if_test_is_false, if_test_is_true)[test]`
