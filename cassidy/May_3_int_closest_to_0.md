@@ -46,6 +46,7 @@ The `%` operator returns the `mod` of the operands. In other words, the remainde
 
 For positive inputs, we simply subtract the modulus of the input and 1 from the input.
 For negative inputs, we subtract the modulus of the input and 1 from 1. This gives us the decimal fraction of the input. Next, we simply add it to the input.
+If there is no decimal fraction in input, then there is no need for modification.
 
 ## Python implementation
 
@@ -58,6 +59,8 @@ def round(num: float):
     else:
         return int(num + (1-(num%1)))
 ```
+
+- 164 characters
 
 ## Optimization for code length
 
