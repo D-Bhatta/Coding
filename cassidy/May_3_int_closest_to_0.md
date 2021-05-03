@@ -61,4 +61,12 @@ def round(num: float):
 
 ## Optimization for code length
 
+### First iteration
 
+```python
+def round(num: float):
+    return (int(((num + (1-(num%1))), (num - (num%1)))[num > 0]), num)[num%1 == 0]
+```
+
+- 106 characters (35% reduction)
+- We use the [tuple ternary operator](https://book.pythontips.com/en/latest/ternary_operators.html) to reduce the number of characters required.
