@@ -85,3 +85,10 @@ def test_odd_square_sum(break_point: int, total: int):
     assert (
         odd_square_sum(break_point) == total
     ), f"The sum is incorrect at breakpoint {break_point}."
+
+def test_odd_square_sum_v2():
+    assert odd_square_sum(1) == 0
+    assert odd_square_sum(2) == 1
+    assert odd_square_sum(9) == 1
+    assert odd_square_sum(10) == 10
+    assert odd_square_sum(44) == 35
