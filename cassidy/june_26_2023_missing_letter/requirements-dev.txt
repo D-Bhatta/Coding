@@ -1,0 +1,15 @@
+bandit
+black
+dlint
+flake8
+flake8-bugbear
+flake8-comprehensions
+flake8-secure-coding-standard
+flake8-simplify
+mypy
+pre-commit
+pydantic
+pydocstyle
+pylint
+pytest
+pytest-asyncio
